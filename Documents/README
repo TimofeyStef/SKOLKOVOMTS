@@ -1,0 +1,12 @@
+-- 1) получение всех имен и фамилий людей в определенном кабинете;
+-- SELECT first_name,last_name FROM my where room = '400.0';
+-- 2) добавление нового телефона сотруднику
+-- UPDATE my SET  phone = '+79999676623' WHERE id = '2';
+-- 3) получение списка телефонов всех сотрудников определенной должности в одном из отделов;
+-- SELECT phone FROM my where (position = 'Manager' and department = 'IT');
+-- 4) добавление нового сотрудника;
+-- DELETE FROM my where id = '2';
+-- INSERT INTO my (id, department, email, first_name, last_name, phone, position, room)
+-- VALUES (2,'d','e','f','l','p','p','3');
+-- 5) перемещение сотрудника в другой отдел со сменой комнаты.
+-- UPDATE my SET (department,room) = ('f',1) where id = '6';
